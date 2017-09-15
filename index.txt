@@ -1,4 +1,4 @@
-Some content from feature branch
+Some content from feature branch and master
 
 Some content from tocreatte branch
 
