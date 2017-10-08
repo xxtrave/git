@@ -5,4 +5,10 @@ Some content from tocreatte branch
 
 trying git stash
 
+
 content from feature-branch
+
+Playin with stash 
+
+content from feature-branch
+
