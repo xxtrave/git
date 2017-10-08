@@ -3,7 +3,7 @@ Some content from tocreatte branch
 This added through git hub
 
 tri'n to use rebase
-
+tring without rebase
 
 trying git stash
 
