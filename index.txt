@@ -1,14 +1,20 @@
-Some content from feature branch and master
-
 Some content from tocreatte branch
 
-Some content from tocreatte branch
+This added through git hub
 
-
-
+tri'n to use rebase
+tring without rebase
 
 trying git stash
 
+
+content from feature-branch
+
+Playin with stash 
+content from feature-branch
+
+anoth line
+yet ano
 
 Playin with stash 
 
@@ -16,4 +22,3 @@ Playin with stash
 adds line 16
 
 sdfas
-
