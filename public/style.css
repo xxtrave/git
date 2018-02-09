@@ -1,0 +1,56 @@
+  .collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .collection-item.avatar {
+  min-height: 84px;
+  padding-left: 72px;
+  position: relative;
+}
+
+.collection li.collection-item{
+  list-style: none;
+}
+.collection li:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.collection.well{
+  background-color: #fff;
+}
+
+span.title{
+  position: relative;
+  top: 3px;
+}
+
+span.title em{
+  padding-left: 10px;
+}
+
+span.title strong{
+  font-size: 1.3em;
+}
+
+li.collection-item img{
+  position: relative;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: -10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+span.chatMsg{
+  word-wrap: break-word;
+  position: relative;
+  left: 45px;
+}

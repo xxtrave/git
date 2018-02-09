@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="well">
+            <h3>Online Users</h3>
+            <ul class="list-group">
+                <li ng-repeat="user in onlineUsers track by $index">{{user}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <ul class="message-list collection well" style="height:35em;overflow:scroll;">
+            <li class="collection-item message-item" ng-repeat="msg in ctrl1.chat track by $index" scroll-bottom="msg">
+                <span class="col-md-12 col-sm-12 col-xs-12">
+                    <img src='https://robohash.org/996231?set=set2&bgset=bg2&size=70x70'>
+                    <span class="title text-muted"><strong>{{msg.username}}</strong><em data-date="{{::ctrl1.getToday() | date}}">{{ ::ctrl1.getToday() | date : 'h:mm a'}}</em></em></span>
+                </span>
+                <span style="word-wrap: break-word;" class="col-md-12 col-sm-12 col-xs-12 chatMsg" data-ng-bind-html="msg.message | textbreakFilter"></span>
+                <br/>
+            </li>
+            <div>
+                <span ng-show="ctrl1.typing"><b><em>{{ctrl1.isTyping}}</em></b> is typing....</span>
+                <br/>
+            </div>
+        </ul>
+        <form>
+            <div class="form-group">
+                <label>Enter Message:</label>
+                <textarea style="resize:none" type="text" class="form-control" placeholder="Message" ng-model="ctrl1.chatMsg" ng-change="ctrl1.userTyping()" send-enter="ctrl1.sendMsg(ctrl1.chatMsg)"></textarea>
+                <br/>
+                <input type="submit" class="btn btn-primary" value="send message" ng-disabled="!ctrl1.chatMsg" ng-click="ctrl1.sendMsg(ctrl1.chatMsg)">
+            </div>
+        </form>
+    </div>
+</div>
